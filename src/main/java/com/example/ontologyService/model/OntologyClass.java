@@ -1,5 +1,5 @@
 // OntologyClass.java
-package com.example.ontology_service.model;
+package com.example.ontologyService.model;
 
 import org.springframework.data.neo4j.core.schema.GeneratedValue;
 import org.springframework.data.neo4j.core.schema.Id;

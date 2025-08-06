@@ -1,4 +1,4 @@
-package com.example.ontology_service;
+package com.example.ontologyService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
