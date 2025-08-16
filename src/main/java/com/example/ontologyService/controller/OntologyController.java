@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
+
 
 @RestController
 @RequestMapping("/ontologies")
@@ -24,7 +26,7 @@ public class OntologyController {
 
     // READ
     @GetMapping("/{id}")
-    public Optional<Ontology> getOntology(@PathVariable Long id) {
+    public Optional<Ontology> getOntology(@PathVariable UUID id) {
         return ontologyRepository.findById(id);
     }
 
@@ -36,7 +38,7 @@ public class OntologyController {
 
     // DELETE
     @DeleteMapping("/{id}")
-    public void deleteOntology(@PathVariable Long id) {
+    public void deleteOntology(@PathVariable UUID id) {
         ontologyRepository.deleteById(id);
     }
 }
